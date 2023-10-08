@@ -16,28 +16,28 @@
           <h1>Movie Gallary</h1>
         </div>
         <div class="col-6 text-right d-flex justify-content-end align-items-center">
-          <button class="btn btn-warning">Add Movie</button>
+          <button class="btn btn-warning" id="Btn">Add Movie</button>
         </div>
       </div></div></header>
       <div class="container-mt-4">
         <div class="row">
-      <div class="backDrop" id="backDrop"></div>
+      <div class="backDrop cmodel" id="backDrop"></div>
         <div class="ourModal" id="ourModal">
         <div class="card">
           <div class="card-header">
             <h2 class="m-0"> Add Movie Adress
-              <i class="fas fa-times"></i>
+              <i class="fas fa-times cmodel"></i>
             </h2>
           </div>
           <div class="card-body">
-            <form>
+            <form id="movieform">
               <div class="form-group">
                 <lable for="title">Movie Title</lable>
                 <input type="text" id="title" class="form-control">
               </div>
               <div class="form-group">
                 <lable for="movie-url">Movie Url</lable>
-                <input type="text" id="movie-url" class="form-control">
+                <input type="text" id="movieurl" class="form-control">
               </div>
               <div class="form-group">
                 <lable for="movieRatings">Movie Ratings</lable>
@@ -53,8 +53,8 @@
 
               </div>
               <div class="text-right">
-                <button class="btn btn-primary" type="submit">Add Movie</button>
-                <button class="btn btn-danger" type="cancle">Cancel</button>
+                <button class="btn btn-primary" type="submit" id="addMovieBtn">Add Movie</button>
+                <button class="btn btn-danger cmodel" type="cancle">Cancel</button>
               </div>
             </form>
           </div>
